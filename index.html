@@ -29,6 +29,9 @@
 							'green': item.partyCode == 'GRN',
 							'gray': item.partyCode == 'IND'
 
+				        }" ng-repeat="item in list.results">
+				            <th scope="row">{{item.name}}</th>
+				            <td>{{item.votes}}</td>
 				        </tr>
 				    </tbody>
 				</table>
